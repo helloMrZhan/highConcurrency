@@ -3,9 +3,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.zjq</groupId>
-    <artifactId>concurrency</artifactId>
+    <artifactId>highConcurrency</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>concurrency</name>
+    <name>highConcurrency</name>
     <description>并发基础与高并发学习</description>
 
     <properties>
