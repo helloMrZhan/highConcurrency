@@ -10,7 +10,7 @@ import java.util.concurrent.Semaphore;
 
 /**
  *
- * 并发测试
+ * 代码模拟并发测试
  * @author zjq
  */
 @Slf4j
@@ -43,9 +43,11 @@ public class ConcurrencyTest {
                 } catch (Exception e) {
                     log.error("exception", e);
                 }
+                //计数器减1
                 countDownLatch.countDown();
             });
         }
+        //在所有线程执行完之后统计计数结果
         countDownLatch.await();
         executorService.shutdown();
         log.info("count:{}", count);
