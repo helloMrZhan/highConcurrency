@@ -1,6 +1,6 @@
 package com.zjq.concurrency;
 
-import com.zjq.concurrency.threadLocal.RequestHolder;
+import com.zjq.concurrency.example.threadLocal.RequestHolder;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;

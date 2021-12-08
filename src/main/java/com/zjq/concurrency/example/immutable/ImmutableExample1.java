@@ -1,4 +1,4 @@
-package com.zjq.concurrency.immutable;
+package com.zjq.concurrency.example.immutable;
 
 import com.google.common.collect.Maps;
 import com.zjq.concurrency.anno.NotThreadSafe;

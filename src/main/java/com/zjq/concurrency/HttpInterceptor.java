@@ -1,8 +1,7 @@
 package com.zjq.concurrency;
 
-import com.zjq.concurrency.threadLocal.RequestHolder;
+import com.zjq.concurrency.example.threadLocal.RequestHolder;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;

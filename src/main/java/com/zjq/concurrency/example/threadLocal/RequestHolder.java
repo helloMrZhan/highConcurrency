@@ -1,4 +1,4 @@
-package com.zjq.concurrency.threadLocal;
+package com.zjq.concurrency.example.threadLocal;
 
 /**
  * <p>自定义RequestHolder</p></p>

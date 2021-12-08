@@ -1,4 +1,4 @@
-package com.zjq.concurrency.threadLocal;
+package com.zjq.concurrency.example.threadLocal;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
