@@ -24,7 +24,7 @@ public class VectorExample2 {
 
     public static void main(String[] args) throws Exception {
 
-        //多次调用的情况下可以发现会导致程序报错，因为多线程操作有可能另外一个线程移除了后面线程要获取的值
+        //多次调用的情况下可以发现会导致程序报错，原因：当一个线程remove(i)时，同时另一个线程get(j), i=j，此时就回报错
         while(true) {
             for (int i = 0; i < 10; i++) {
                 list.add(i);
