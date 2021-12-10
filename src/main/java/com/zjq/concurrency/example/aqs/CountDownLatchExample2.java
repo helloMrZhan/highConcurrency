@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * <p>CountDownLatch</p>
@@ -13,7 +14,7 @@ import java.util.concurrent.Executors;
  * @Date 2021/12/10
  */
 @Slf4j
-public class CountDownLatchExample1 {
+public class CountDownLatchExample2 {
     /**
      * 线程数量
      */
@@ -38,8 +39,8 @@ public class CountDownLatchExample1 {
                 }
             });
         }
-        //使当前线程等待，直到计数器为零，除非当前线程被中断
-        countDownLatch.await();
+        //可以设置等待时间，超过这个时间就会执行，不会等到计数器变为0,但是之前给定的线程还是会执行完
+        countDownLatch.await(20, TimeUnit.MILLISECONDS);
         //当这200个请求被处理完成之后，才会执行
         log.info("finish");
         exec.shutdown();
